@@ -9,6 +9,7 @@ var banner_info = "“ I believe we all have a dancer within ourselves and that 
 				  "Transfer that to the stage and the audience is treated to a captivating performance! ”";
 
 function displayBannerTitle() {
+	bannerTextFromTop();
 	if (banner_title.length >= current_title_letter) {
 		$("#home-banner--title").append(banner_title.charAt(current_title_letter));
 		current_title_letter++;
@@ -20,19 +21,23 @@ function displayBannerTitle() {
 }
 
 function displayBannerInfo() {
-	bannerTextFromTop();
-	if (banner_info.length >= current_info_letter) {
-		$("#home-banner--info").append(banner_info.charAt(current_info_letter));
-		current_info_letter++;
-		setTimeout(displayBannerInfo, 25);
-	}
+	$("#home-banner--info").text(banner_info);
+	var info_height = $("#home-banner--info").height();
+	$("#home-banner--title").animate({
+		"margin-top": 0 - (info_height / 2)
+	}, 1000);
+	setTimeout(function(){
+		$("#home-banner--title").css('margin-top',"0px");
+		bannerTextFromTop();
+	}, 1000);
 }
 
-if (window.matchMedia("(min-width: 768px)").matches) setTimeout(displayBannerTitle, 500);
-else {
-	$("#home-banner--title").text(banner_title);
-	$("#home-banner--info").text(banner_info);
-}
+	//**Done on load
+	if (window.matchMedia("(min-width: 768px)").matches) setTimeout(displayBannerTitle, 500);
+	else {
+		$("#home-banner--title").text(banner_title);
+		$("#home-banner--info").text(banner_info);
+	}
 
 //Center the Header Text vertically
 function bannerTextFromTop() {
@@ -42,7 +47,8 @@ function bannerTextFromTop() {
 	$("#home-banner--text").css("margin-top", text_margin);
 }
 
-$(window).on("resize load", bannerTextFromTop);
+	//**Done on load and resize
+	$(window).on("resize load", bannerTextFromTop);
 
 //Make Nav Bar Fixed/Relative
 $(window).on("scroll", function() {
@@ -62,5 +68,6 @@ $(window).on("scroll", function() {
 	}
 });
 
-$("#header").css("position","relative");
-$("#content").css("margin-top","0px");
+	//**Done on load
+	$("#header").css("position","relative");
+	$("#content").css("margin-top","0px");
