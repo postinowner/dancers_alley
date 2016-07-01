@@ -1,9 +1,22 @@
 {
-  "name": "dancers_alley",
-  "version": "0.0.1",
-  "main": "app.js",
-  "author": "Michael Jones",
-  "dependencies": {
-    "express": "~4.13.4"
-  }
+	"name": "dancers_alley",
+	"version": "0.0.1",
+	"main": "app.js",
+	"author": "Michael Jones",
+	"dependencies": {
+		"express": "~4.13.4"
+	},
+	"description": "Dancer's Alley",
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/postinowner/dancers_alley.git"
+	},
+	"license": "BSD-2-Clause",
+	"bugs": {
+		"url": "https://github.com/postinowner/dancers_alley/issues"
+	}
 }
