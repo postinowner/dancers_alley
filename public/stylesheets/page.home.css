@@ -1,16 +1,33 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
+
+#home-banner--text {
+	margin-bottom: -100%;
+}
+
+#home-banner--text * {
+	font-family: 'Raleway', sans-serif;
+}
+
 #home-banner--title {
 	z-index: 1;
 	color: #3F68AF;
 	text-align: center;
 	font-size: 90px;
-	line-height: 100px;
+	line-height: 90px;
 	font-weight: bold;
-	margin-bottom: -100%;
+}
+
+@media (max-width: 991px) {
+	#home-banner--title {
+		font-size: 70px;
+		line-height: 70px;
+	}
 }
 
 @media (max-width: 767px) {
-	#home-banner--text {
+	#home-banner--title {
 		font-size: 50px;
+		line-height: 50px;
 	}
 }
 
@@ -20,11 +37,17 @@
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
-	margin-bottom: -100%;
+	margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+	#home-banner--info {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 767px) {
-	#home-banner--text {
-		font-size: 50px;
+	#home-banner--info {
+		font-size: 12px;
 	}
 }
