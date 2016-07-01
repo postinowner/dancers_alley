@@ -17,5 +17,5 @@ var controllers = require('./controllers');
 controllers.set(app);
 
 app.listen(8080, function () {
-	console.log('League Hub started on port 8080.');
+	console.log('Dancers Alley started on port 8080.');
 });

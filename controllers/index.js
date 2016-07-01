@@ -1,5 +1,3 @@
-var champions = require('./champions.js');
-
 module.exports.set = function(app) {
 
 	app.get('/:var(home|index)?', function(req, res) {
@@ -7,6 +5,9 @@ module.exports.set = function(app) {
 							 page_name : 'home'});
 	});
 
-	champions.set(app);
+	app.get('/about', function(req, res) {
+		res.render('about', { title : 'About' ,
+							 page_name : 'about'});
+	});
 
 }

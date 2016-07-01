@@ -1,38 +1,66 @@
-function displayBannerText() {
-	var phrase = banner_phrases[banner_current_phrase];
-	if (phrase.length >= banner_current) {
-		$banner_text.append(phrase.charAt(banner_current));
-		banner_current++;
-		setTimeout(displayBannerText, 110);
+var current_title_letter = 0;
+var banner_title = "Dancer's Alley";
+
+var current_info_letter = 0;
+var banner_info = "I believe we all have a dancer within ourselves and that dance is an art form of truth and expression. " +
+				"An education creates space that allows the dancer to truly feel the beauty inside oneself, " +
+				"and that inner beauty creates an ease of movement and self confidence in our daily lives. " +
+				"Transfer that to the stage and the audience is treated to a captivating performance! EVERYBODY CAN DANCE!";
+
+if (window.matchMedia("(min-width: 768px)").matches) {
+	setTimeout(displayBannerTitle, 500);
+}
+else {
+	$("#home-banner--title").text(banner_title);
+	$("#home-banner--info").text(banner_info);
+}
+
+function displayBannerTitle() {
+	if (banner_title.length >= current_title_letter) {
+		$("#home-banner--title").append(banner_title.charAt(current_title_letter));
+		current_title_letter++;
+		setTimeout(displayBannerTitle, 110);
 	}
 	else {
-		banner_current = 0;
-		setTimeout(hideBannerText, 1500);
+		setTimeout(displayBannerInfo, 1500);
 	}
 }
 
-function hideBannerText() {
-	$banner_text.animate({"opacity": 0}, 800);
-	if ((banner_phrases.length - 1) > banner_current_phrase) banner_current_phrase++
-	else banner_current_phrase = 0
-	setTimeout(function() {
-		$banner_text.css("opacity", 1).html("");
-		bannerTextFromTop();
-		displayBannerText();
-	}, 1200);
+function displayBannerInfo() {
+	if (banner_info.length >= current_info_letter) {
+		$("#home-banner--info").append(banner_info.charAt(current_info_letter));
+		current_info_letter++;
+		setTimeout(displayBannerInfo, 50);
+	}
 }
 
-$banner_text = $("#banner-main--text");
-$banner_text.css("color","#3F68AF");
 
-banner_current = 0;
-banner_current_phrase = 0;
-banner_phrases = Array("League Hub", "Summoners", "Champions", "Live Games", "Tournaments", "Leaderboards");
+$("#header").css("position","relative");
+$("#content").css("margin-top","0px");
 
-setTimeout(displayBannerText, 500);
+$(window).on("scroll", function() {
+	var fromTop = $("html").scrollTop();
+	var banner = $("#home-banner").height();
+	if (fromTop > banner) {
+		$("#header").css({
+			"position" : "fixed",
+			"border-bottom" : "5px solid white"
+		});
+	}
+	else {
+		$("#header").css({
+			"position" : "relative",
+			"border-bottom" : "0px"
+		});
+	}
+});
 
-function setHomePageHeaderColor() {
-	$("#header").css("background", "#3F68AF");
+function bannerTextFromTop() {
+	var container_height = $("#home-banner").outerHeight();
+	var text_margin = container_height / 2;
+	if (window.matchMedia("(max-width: 767px)").matches) text_margin = text_margin - 50
+	else text_margin = text_margin - 50
+	$("#home-banner--title").css("margin-top", text_margin);
 }
 
-$(document).ready(setHomePageHeaderColor);
+$(window).on("resize load", bannerTextFromTop);

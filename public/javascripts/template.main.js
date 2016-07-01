@@ -3,26 +3,6 @@ $("#header-mobile--menu").click(function() {
 });
 
 $(window).on("scroll", function() {
-	var fromTop = $("html").scrollTop();
-	var banner = $("#banner-main").height();
-	if (fromTop > banner) {
-		$("#header").css({
-			"position" : "fixed",
-			"border-bottom" : "5px solid white",
-			"background" : "#27344A"
-		});
-	}
-	else {
-		$("#header").css({
-			"position" : "relative",
-			"border-bottom" : "0px"
-		});
-		if (typeof setHomePageHeaderColor !== "undefined") setHomePageHeaderColor();
-		else $("#header").css("background", "rgba(224, 255, 255, 0.25)");
-	}
-});
-
-$(window).on("scroll", function() {
 	if (window.matchMedia("(min-width: 768px)").matches) {
 		for (var i = 0; i < 4; i++) {
 			$("#scroll-animation--container").append('<div class="scroll-animation--bubble x-grid-a nopad"></div>');
