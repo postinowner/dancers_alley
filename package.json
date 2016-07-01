@@ -1,6 +1,6 @@
 {
 	"name": "dancers_alley",
-	"version": "0.0.1",
+	"version": "0.10.25",
 	"description": "Dancer's Alley",
 	"main": "app.js",
 	"dependencies": {
@@ -21,6 +21,7 @@
 		"url": "https://github.com/postinowner/dancers_alley/issues"
 	},
 	"engines": {
-		"node": "0.10.25"
+		"node": "0.10.25",
+		"npm": "0.10.25"
 	}
 }
