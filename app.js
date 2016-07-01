@@ -16,6 +16,8 @@ app.set('view engine', 'hbs');
 var controllers = require('./controllers');
 controllers.set(app);
 
-app.listen(8080, function () {
+var port = process.env.PORT || 8080;
+
+app.listen(port, function () {
 	console.log('Dancers Alley started on port 8080.');
 });
