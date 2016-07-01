@@ -1,0 +1,163 @@
+#wrapper {
+	min-width: 500px;
+}
+
+/* Display Correct Headers */
+
+@media (max-width: 767px) {
+	#header {
+		display: none;
+	}
+
+	#header-mobile {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	#header {
+		display: block;
+	}
+
+	#header-mobile {
+		display: none;
+	}
+}
+
+/* Desktop Header */
+
+#header {
+	line-height: 100px;
+	background: rgba(224, 255, 255, 0.25);
+	z-index: 10;
+	height: 100px;
+}
+
+#header-logo {
+	left: 15px;
+	font-weight: bold;
+	color: white;
+	height: 100px;
+	font-size: 16px;
+}
+
+.header-item {
+	float: right;
+	right: 15px;
+	font-weight: bold;
+	color: white;
+	height: 100px;
+	display: block;
+	font-size: 12px;
+}
+
+#header-logo:hover,
+.header-item:hover {
+	background-color: rgba(224, 255, 255, 0.25);
+	border-bottom: 5px solid white;
+}
+
+@media (min-width: 992px) {
+	#header-logo {
+		left: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 20px;
+	}
+	
+	.header-item {
+		right: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 14px;
+	}
+}
+
+/* Mobile Header */
+
+#header-mobile {
+	min-height: 50px;
+	z-index: 10;
+	min-width: 500px;
+	background: #27344A;
+}
+
+#header-mobile--logo {
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+}
+
+#header-mobile--menu {
+	font-size: 30px;
+	float: right;
+	color: white;
+	padding-top: 7px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: -100%;
+	margin-right: 15px;
+	height: 50px;
+	z-index: 10;
+	border-left: 1px solid #5C6E7E;
+	border-right: 1px solid #5C6E7E;
+}
+
+#header-mobile--menu:hover {
+	cursor: pointer;
+	background-color: #5C6E7E;
+}
+
+#header-mobile--item--holder {
+	display: none;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	border-top: 1px solid #5C6E7E;
+	border-bottom: 5px solid white;
+	background-color: #303E53;
+}
+
+.header-mobile--item {
+	color: white;
+	font-weight: bold;
+	border: 1px solid white;
+	padding: 15px;
+	border-radius: 200px;
+	font-size: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+	float: none;
+}
+
+.header-mobile--item:hover {
+	background-color: white;
+	color: #27344A;
+}
+
+/* Page Contents */
+
+.scroll-animation--bubble {
+	position: fixed;
+	bottom: -15px;
+	border-radius: 100%;
+	background-color: white;
+	z-index: 12;
+}
+
+@media (max-width: 767px) {
+	#content {
+		background-color: #F2F2F2;
+	}
+}
+
+@media (min-width: 768px) {
+	#content {
+		background-color: #F2F2F2;
+		margin-top: -100px;
+	}
+}

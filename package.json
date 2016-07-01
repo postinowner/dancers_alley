@@ -1,0 +1,9 @@
+{
+  "name": "league_hub",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "Michael Jones",
+  "dependencies": {
+    "express": "~4.13.4"
+  }
+}
