@@ -1,6 +1,6 @@
 {
 	"name": "dancers_alley",
-	"version": "0.10.25",
+	"version": "1.0.0",
 	"description": "Dancer's Alley",
 	"main": "app.js",
 	"dependencies": {
