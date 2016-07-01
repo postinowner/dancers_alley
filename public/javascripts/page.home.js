@@ -2,38 +2,37 @@
 var current_title_letter = 0;
 var banner_title = "Dancer's Alley";
 
-var current_info_letter = 0;
 var banner_info = "“ I believe we all have a dancer within ourselves and that dance is an art form of truth and expression. " +
 				  "An education creates space that allows the dancer to truly feel the beauty inside oneself, " +
 				  "and that inner beauty creates an ease of movement and self confidence in our daily lives. " +
 				  "Transfer that to the stage and the audience is treated to a captivating performance! ”";
 
-function displayBannerTitle() {
+function displayBannerText() {
+	$("#home-banner--title").css("margin-top","0");
 	bannerTextFromTop();
 	if (banner_title.length >= current_title_letter) {
+		if (current_title_letter == 0) {
+			if (window.matchMedia("(max-width: 991px)").matches) {
+				$("#home-banner--title").css("margin-top","-35px");
+			}
+			else {
+				$("#home-banner--title").css("margin-top","-45px");
+			}
+		}
 		$("#home-banner--title").append(banner_title.charAt(current_title_letter));
 		current_title_letter++;
-		setTimeout(displayBannerTitle, 100);
+		setTimeout(displayBannerText, 100);
 	}
 	else {
-		setTimeout(displayBannerInfo, 500);
+		setTimeout(function() {
+			$("#home-banner--info").text(banner_info);
+			bannerTextFromTop();
+		}, 500);
 	}
-}
-
-function displayBannerInfo() {
-	$("#home-banner--info").text(banner_info);
-	var info_height = $("#home-banner--info").height();
-	$("#home-banner--title").animate({
-		"margin-top": 0 - (info_height / 2)
-	}, 1000);
-	setTimeout(function(){
-		$("#home-banner--title").css('margin-top',"0px");
-		bannerTextFromTop();
-	}, 1000);
 }
 
 	//**Done on load
-	if (window.matchMedia("(min-width: 768px)").matches) setTimeout(displayBannerTitle, 500);
+	if (window.matchMedia("(min-width: 768px)").matches) setTimeout(displayBannerText, 500);
 	else {
 		$("#home-banner--title").text(banner_title);
 		$("#home-banner--info").text(banner_info);
