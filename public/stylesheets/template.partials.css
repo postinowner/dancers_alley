@@ -20,7 +20,8 @@
 }
 
 
-.default-container--text {
+.default-container--text,
+.default-container--image {
 	padding: 15px;
 }
 
@@ -30,6 +31,6 @@
 	background-color: white;
 }
 
-.default-container--image {
-	
+.default-container--image img {
+	border-radius: 8px;
 }
