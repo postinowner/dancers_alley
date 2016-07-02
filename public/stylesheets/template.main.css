@@ -76,9 +76,10 @@ body {
 	color: white;
 	height: 100px;
 	display: block;
-	font-size: 12px;
+	font-size: 13px;
 	padding-left: 10px;
 	padding-right: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header-item:hover {
@@ -97,7 +98,7 @@ body {
 		right: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 

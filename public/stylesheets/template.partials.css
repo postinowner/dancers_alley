@@ -19,7 +19,6 @@
 	border: 1px solid #BBB;
 }
 
-
 .default-container--text,
 .default-container--image {
 	padding: 15px;
@@ -29,6 +28,9 @@
 	border: 1px solid #CCC;
 	padding: 15px;
 	background-color: white;
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	line-height: 25px;
 }
 
 .default-container--image img {
