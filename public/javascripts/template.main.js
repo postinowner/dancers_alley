@@ -1,7 +1,7 @@
 $("#header-mobile--menu").click(function() {
 	$("#header-mobile--item--holder").toggle();
 	if ($("#header-mobile--item--holder").is(":visible"))
-		$("#header-socialnetworking--holder-mobile").css("margin-top","260px");
+		$("#header-socialnetworking--holder-mobile").css("margin-top","262px");
 	else
 		$("#header-socialnetworking--holder-mobile").css("margin-top","54px");
 });
