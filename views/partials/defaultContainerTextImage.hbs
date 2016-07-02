@@ -1,0 +1,19 @@
+<div class="default-container x-grid-12 nopad">
+
+	{{#if imageFirst}}
+		<div class="default-container--image x-grid-6 nopad">
+			<img src="static/images/{{image}}" class="x-grid-12 nopad">
+		</div>
+	{{/if}}
+
+	<div class="default-container--text x-grid-6 nopad">
+		<div id="x-grid-12 nopad"> {{text}} </div>
+	</div>
+
+	{{#unless imageFirst}}
+		<div class="default-container--image x-grid-6 nopad">
+			<img src="static/images/{{image}}" class="x-grid-12 nopad">
+		</div>
+	{{/unless}}
+
+</div>

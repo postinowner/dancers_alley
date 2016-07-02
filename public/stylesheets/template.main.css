@@ -1,5 +1,19 @@
+body {
+	background-color: #E7E7E7;
+}
+
 #wrapper {
 	min-width: 500px;
+}
+
+@media (min-width: 2000px) {
+	#wrapper {
+		max-width: 2000px;
+		float: left;
+		position: relative;
+		border-left: 2px solid #27344A;
+		border-right: 2px solid #27344A;
+	}
 }
 
 /* Display Correct Headers */
@@ -44,7 +58,10 @@
 }
 
 #header-logo:hover {
-	border-bottom: 5px solid white;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 5px solid #3F68AF;
+	box-shadow: 0px 5px 10px 1px #27344A;
 }
 
 #header-logo img {
@@ -80,6 +97,18 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		font-size: 14px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#header-logo {
+		left: 25px;
+		height: 180px;
+		padding: 30px;
+	}
+	
+	.header-item {
+		right: 25px;
 	}
 }
 

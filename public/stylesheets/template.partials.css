@@ -1,0 +1,35 @@
+.default-container--holder {
+	margin-bottom: 15px;
+}
+
+.default-container {
+	margin-top: 15px;
+	border: 1px solid #CCC;
+	box-shadow: 0px 0px 6px 2px #CCC;
+	background-color: #EEE;
+}
+
+.default-container:hover {
+	border: 1px solid #AAA;
+	box-shadow: 0px 0px 8px 2px #BBB;
+	background-color: #E6E6E6;
+}
+
+.default-container:hover .default-container--text div {
+	border: 1px solid #BBB;
+}
+
+
+.default-container--text {
+	padding: 15px;
+}
+
+.default-container--text div {
+	border: 1px solid #CCC;
+	padding: 15px;
+	background-color: white;
+}
+
+.default-container--image {
+	
+}
