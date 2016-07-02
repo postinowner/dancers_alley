@@ -11,13 +11,65 @@
 <div class="default-container--holder x-grid-12 l-grid-10 l-grid-offset-1">
 
 	{{> defaultDoubleContainer
-		textFirst="Quote of the month Here
-				   Quote of the month Here"
+		textFirst="
+					<div id='home-quote--title' class='x-grid-a nopad'>
+						This month's quote:
+					</div>
+					<div id='home-quote' class='x-grid-12 nopad'>
+						A quote for this month will go right here.
+						It will look awesome, I know. Speaking of, what will the quote be?
+					</div>
+				  "
 		imageSecond="pics/page.home.1.jpg" }}
 
+
+
+
+
+	{{> defaultSingleContainer
+		text="Test" }}
+
 	{{> defaultDoubleContainer
-		imageFirst="pics/page.home.2.jpg"
-		imageSecond="pics/page.home.3.jpg"
-		imageSecondCaption="Test Caption" }}
+		textFirst="Test"
+		textSecond="Test2" }}
+
+	{{> defaultTripleContainer
+		textFirst="Test"
+		textSecond="Test2"
+		textThird="Test3" }}
+
+	{{> defaultQuadContainer
+		textFirst="Test"
+		textSecond="Test2"
+		textThird="Test3"
+		textFourth="Test4" }}
+
+
+
+
+
+	{{> defaultSingleContainer
+		image="pics/page.home.1.jpg"
+		imageCaption="Test" }}
+
+	{{> defaultDoubleContainer
+		imageFirst="pics/page.home.1.jpg"
+		imageFirstCaption="Test"
+		imageSecond="pics/page.home.1.jpg" }}
+
+	{{> defaultTripleContainer
+		imageFirst="pics/page.home.1.jpg"
+		imageFirstCaption="Test"
+		imageSecond="pics/page.home.1.jpg"
+		imageThird="pics/page.home.1.jpg"
+		imageThirdCaption="Test" }}
+
+	{{> defaultQuadContainer
+		imageFirst="pics/page.home.1.jpg"
+		imageFirstCaption="Test"
+		imageSecond="pics/page.home.1.jpg"
+		imageThird="pics/page.home.1.jpg"
+		imageThirdCaption="Test"
+		imageFourth="pics/page.home.1.jpg" }}
 
 </div>

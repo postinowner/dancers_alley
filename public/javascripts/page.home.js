@@ -53,7 +53,8 @@ function bannerTextFromTop() {
 $(window).on("scroll", function() {
 	var fromTop = $(window).scrollTop();
 	var banner = $("#home-banner").height();
-	if (fromTop > banner) {
+	var navBar = $("#header").height();
+	if (fromTop > (banner + navBar)) {
 		$("#header").css({
 			"position" : "fixed",
 			"border-bottom" : "5px solid white"
