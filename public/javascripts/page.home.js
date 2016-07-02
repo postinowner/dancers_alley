@@ -51,7 +51,7 @@ function bannerTextFromTop() {
 
 //Make Nav Bar Fixed/Relative
 $(window).on("scroll", function() {
-	var fromTop = $("html").scrollTop();
+	var fromTop = $(window).scrollTop();
 	var banner = $("#home-banner").height();
 	if (fromTop > banner) {
 		$("#header").css({

@@ -1,0 +1,33 @@
+<div class="default-container x-grid-12 nopad">
+
+	{{#if imageFirst}}
+		<div class="default-container--image x-grid-12 s-grid-6 nopad">
+			<img src="static/images/{{imageFirst}}" class="x-grid-12 nopad">
+			{{#if imageFirstCaption}}
+				<div class="default-container--image-caption x-grid-12 nopad"> {{imageFirstCaption}} </div>
+			{{/if}}
+		</div>
+	{{/if}}
+
+	{{#if textFirst}}
+		<div class="default-container--text x-grid-12 s-grid-6 nopad">
+			<div class="x-grid-12 nopad"> {{textFirst}} </div>
+		</div>
+	{{/if}}
+
+	{{#if imageSecond}}
+		<div class="default-container--image x-grid-12 s-grid-6 nopad">
+			<img src="static/images/{{imageSecond}}" class="x-grid-12 nopad">
+			{{#if imageSecondCaption}}
+				<div class="default-container--image-caption x-grid-12 nopad"> {{imageSecondCaption}} </div>
+			{{/if}}
+		</div>
+	{{/if}}
+
+	{{#if textSecond}}
+		<div class="default-container--text x-grid-12 s-grid-6 nopad">
+			<div class="x-grid-12 nopad"> {{textSecond}} </div>
+		</div>
+	{{/if}}	
+
+</div>
