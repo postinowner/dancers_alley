@@ -55,16 +55,10 @@ $(window).on("scroll", function() {
 	var banner = $("#home-banner").height();
 	var navBar = $("#header").height();
 	if (fromTop > (banner + navBar)) {
-		$("#header").css({
-			"position" : "fixed",
-			"border-bottom" : "5px solid white"
-		});
+		$("#header").css("position", "fixed");
 	}
 	else {
-		$("#header").css({
-			"position" : "relative",
-			"border-bottom" : "0px"
-		});
+		$("#header").css("position", "relative");
 	}
 });
 
