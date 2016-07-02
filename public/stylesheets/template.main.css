@@ -66,6 +66,7 @@ body {
 
 #header-logo img {
 	height: 120px;
+	width: 128.75px;
 }
 
 .header-item {
@@ -179,14 +180,6 @@ body {
 }
 
 /* Page Contents */
-
-.scroll-animation--bubble {
-	position: fixed;
-	bottom: -15px;
-	border-radius: 100%;
-	background-color: white;
-	z-index: 12;
-}
 
 @media (max-width: 767px) {
 	#content {
