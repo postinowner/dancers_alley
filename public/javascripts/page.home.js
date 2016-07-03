@@ -51,14 +51,16 @@ function bannerTextFromTop() {
 
 //Make Nav Bar Fixed/Relative
 $(window).on("scroll", function() {
-	var fromTop = $(window).scrollTop();
-	var banner = $("#home-banner").height();
-	var navBar = $("#header").height();
-	if (fromTop > (banner + navBar)) {
-		$("#header").css("position", "fixed");
-	}
-	else {
-		$("#header").css("position", "relative");
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		var fromTop = $(window).scrollTop();
+		var banner = $("#home-banner").height();
+		var navBar = $("#header").height();
+		if (fromTop > (banner + navBar)) {
+			$("#header").css("position", "fixed");
+		}
+		else {
+			$("#header").css("position", "relative");
+		}
 	}
 });
 
