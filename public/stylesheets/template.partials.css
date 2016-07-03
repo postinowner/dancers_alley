@@ -44,3 +44,31 @@
 	font-family: "Arial";
 	margin-top: 5px;
 }
+
+.default-container--title {
+	line-height: 100px;
+	font-size: 35px;
+	color: #27344A;
+}
+
+@media (min-width: 768px) {
+	.default-container--title {
+		margin-top: 55px;
+	}
+}
+
+@media (min-width: 992px) {
+	.default-container--title {
+		margin-top: 75px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.default-container--title {
+		margin-top: 95px;
+	}
+}
+
+.default-container--title:hover {
+	color: #3F68AF;
+}
