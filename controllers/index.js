@@ -26,17 +26,17 @@ module.exports.set = function(app) {
 	});
 
 	app.get('/recitalinfo', function(req, res) {
-		res.render('recitalinfo', { title : 'Recital Info' ,
+		res.render('recitalinfo', { title : 'Recital Information' ,
 							 page_name : 'recitalinfo'});
 	});
 
 	app.get('/policies', function(req, res) {
-		res.render('policies', { title : 'Policies' ,
+		res.render('policies', { title : 'Studio Policies' ,
 							 page_name : 'policies'});
 	});
 
 	app.get('/ensemble', function(req, res) {
-		res.render('ensemble', { title : 'Ensemble' ,
+		res.render('ensemble', { title : 'Dancer\'s Alley Performing Ensemble' ,
 							 page_name : 'ensemble'});
 	});
 
