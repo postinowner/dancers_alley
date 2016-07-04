@@ -52,13 +52,6 @@
 	}
 }
 
-#home-quote--title {
-	color: #3F68AF;
-	font-size: 18px;
-	font-style: italic;
-	border-bottom: 1px solid #CCC;
-}
-
 #home-quote:before {
 	content: "“";
 	font-size: 20px;

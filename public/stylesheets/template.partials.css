@@ -33,6 +33,13 @@
 	border: 1px solid #BBB;
 }
 
+.default-container--text-title {
+	color: #3F68AF;
+	font-size: 18px;
+	font-style: italic;
+	border-bottom: 1px solid #CCC;
+}
+
 .default-container--image-content {
 	border-radius: 8px;
 }
@@ -49,22 +56,23 @@
 	line-height: 100px;
 	font-size: 35px;
 	color: #27344A;
+	margin-top: 15px;
 }
 
 @media (min-width: 768px) {
-	.default-container--title {
+	.default-container--title:first-of-type {
 		margin-top: 55px;
 	}
 }
 
 @media (min-width: 992px) {
-	.default-container--title {
+	.default-container--title:first-of-type {
 		margin-top: 75px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.default-container--title {
+	.default-container--title:first-of-type {
 		margin-top: 95px;
 	}
 }

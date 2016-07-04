@@ -1,0 +1,24 @@
+#about-text {
+	font-size: 13px;
+}
+
+.about-staff--info {
+	margin-top: 15px;
+}
+
+.about-staff--info-item:before {
+	content: "•";
+	font-size: 18px;
+}
+
+.about-staff--info-item {
+	color: #27344A;
+	font-size: 16px;
+}
+
+.about-staff--remarks {
+	font-size: 16px;
+	color: #27344A;
+	font-style: italic;
+	margin-top: 15px;
+}

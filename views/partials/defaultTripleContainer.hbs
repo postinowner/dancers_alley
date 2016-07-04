@@ -12,6 +12,9 @@
 
 		{{#if textFirst}}
 			<div class="default-container--text x-grid-12 nopad">
+				{{#if imageFirstDefaultTitle}}
+					<div class='default-container--text-title x-grid-a nopad'> {{imageFirstDefaultTitle}} </div>
+				{{/if}}
 				<div class="default-container--text-content x-grid-12 nopad"> {{{textFirst}}} </div>
 			</div>
 		{{/if}}
