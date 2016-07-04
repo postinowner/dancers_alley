@@ -16,9 +16,21 @@
 	font-size: 16px;
 }
 
+.about-staff--remarks:before {
+	content: "“";
+	font-size: 20px;
+	font-weight: bold;
+}
+
 .about-staff--remarks {
 	font-size: 16px;
 	color: #27344A;
 	font-style: italic;
 	margin-top: 15px;
+}
+
+.about-staff--remarks:after {
+	content: "”";
+	font-size: 20px;
+	font-weight: bold;
 }
