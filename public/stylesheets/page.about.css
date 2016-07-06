@@ -1,5 +1,5 @@
 #about-text {
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .about-staff--info {
@@ -33,4 +33,10 @@
 	content: "”";
 	font-size: 20px;
 	font-weight: bold;
+}
+
+.about-staff--paragraph {
+	font-size: 16px;
+	color: #27344A;
+	margin-top: 15px;
 }
