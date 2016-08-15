@@ -1,0 +1,90 @@
+#tuition-info {
+	font-size: 15px;
+	color: #888;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#tuition-payment--grid,
+.individual-table {
+	margin-top: 10px;
+	margin-left: 2px;
+	margin-bottom: 5px;
+}
+
+.tuition-payment--row {
+	line-height: 45px;
+}
+
+.tuition-payment--row div{
+	border: 1px solid #DDD;
+	margin-top: -1px;
+	margin-left: -1px;
+	height: 45px;
+}
+
+.tuition-payment--header {
+	font-size: 14px;
+	font-style: italic;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #474747;
+	background-color: #ecf6f9;
+}
+
+#tuition-payment--header-small {
+	font-size: 11px;
+	margin-top: -30px;
+	margin-bottom: -15px;
+	display: block;
+	color: #878787;
+}
+
+.tuition-payment--cost:before {
+	content: "$";
+}
+
+.tuition-payment--cost {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.individual-table--header,
+.individual-table--cost{
+	border: 1px solid #DDD;
+	margin-top: -1px;
+	margin-left: -1px;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.individual-table--header {
+	font-size: 14px;
+	font-style: italic;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #474747;
+	background-color: #ecf6f9;
+}
+
+.individual-table--cost {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.recital-info {
+	font-size: 15px;
+	line-height: 25px;
+	margin-top: 10px;
+	color: #474747;
+}
+
+#recital-info--more {
+	line-height: 15px;
+	font-size: 13px;
+	color: #878787;
+}
