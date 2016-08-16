@@ -49,20 +49,20 @@ function bannerTextFromTop() {
 	//**Done on load and resize
 	$(window).on("resize load", bannerTextFromTop);
 
-//Make Nav Bar Fixed/Relative
-$(window).on("scroll", function() {
-	if (window.matchMedia("(min-width: 768px)").matches) {
-		var fromTop = $(window).scrollTop();
-		var banner = $("#home-banner").height();
-		var navBar = $("#header").height();
-		if (fromTop > (banner + navBar)) {
-			$("#header").css("position", "fixed");
-		}
-		else {
-			$("#header").css("position", "relative");
-		}
-	}
-});
+// //Make Nav Bar Fixed/Relative
+// $(window).on("scroll", function() {
+// 	if (window.matchMedia("(min-width: 768px)").matches) {
+// 		var fromTop = $(window).scrollTop();
+// 		var banner = $("#home-banner").height();
+// 		var navBar = $("#header").height();
+// 		if (fromTop > (banner + navBar)) {
+// 			$("#header").css("position", "fixed");
+// 		}
+// 		else {
+// 			$("#header").css("position", "relative");
+// 		}
+// 	}
+// });
 
 	//**Done on load
 	$("#header").css("position","relative");

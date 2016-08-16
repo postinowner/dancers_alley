@@ -52,7 +52,7 @@
 	}
 }
 
-#home-video {
+.home-videos {
 	margin-left: calc(50% - 210px);
 	float: left;
 	margin-top: 10px;

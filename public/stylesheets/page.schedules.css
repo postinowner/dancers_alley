@@ -12,6 +12,14 @@
 	margin-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+	#tuition-payment--grid,
+	.individual-table {
+		margin-left: -15px;
+		width: calc(100% + 35px);
+	}
+}
+
 .tuition-payment--row {
 	line-height: 45px;
 }
@@ -30,6 +38,9 @@
 	padding-right: 8px;
 	color: #474747;
 	background-color: #ecf6f9;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #tuition-payment--header-small {
@@ -38,6 +49,9 @@
 	margin-bottom: -15px;
 	display: block;
 	color: #878787;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .tuition-payment--cost:before {
@@ -69,6 +83,9 @@
 	padding-right: 8px;
 	color: #474747;
 	background-color: #ecf6f9;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .individual-table--cost {
