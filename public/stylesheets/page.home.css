@@ -52,7 +52,15 @@
 	}
 }
 
-.home-videos {
+#enroll-now {
+	font-size: 45px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	color: #3F68AF;
+}
+
+#home-videos {
 	margin-left: calc(50% - 210px);
 	float: left;
 	margin-top: 10px;

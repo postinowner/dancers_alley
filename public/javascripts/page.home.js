@@ -67,3 +67,6 @@ function bannerTextFromTop() {
 	//**Done on load
 	$("#header").css("position","relative");
 	$("#content").css("margin-top","0px");
+
+	$("#enroll-now").css("margin-top",($("#home-videos").height() / 2) - ($("#enroll-now").height() / 2) + 15);
+	$("#enroll-now").css("margin-bottom",($("#home-videos").height() / 2) - ($("#enroll-now").height() / 2));

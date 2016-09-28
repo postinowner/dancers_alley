@@ -105,3 +105,31 @@
 	font-size: 13px;
 	color: #878787;
 }
+
+#registering-links {
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px
+}
+
+#registering-links a {
+	color: #3F68AF;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#class-schedule--image {
+	margin-top: 10px;
+}
+
+#class-schedule--pdf {
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px
+}
+
+#class-schedule--pdf a {
+	color: #3F68AF;
+	font-weight: bold;
+	font-style: italic;
+}

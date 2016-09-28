@@ -20,9 +20,9 @@ module.exports.set = function(app) {
 							 page_name : 'schedules'});
 	});
 
-	app.get('/workshops', function(req, res) {
-		res.render('workshops', { title : 'Workshops' ,
-							 page_name : 'workshops'});
+	app.get('/extracurricular', function(req, res) {
+		res.render('extracurricular', { title : 'Extra Curricular' ,
+							 page_name : 'extracurricular'});
 	});
 
 	app.get('/recitalinfo', function(req, res) {
@@ -35,9 +35,5 @@ module.exports.set = function(app) {
 							 page_name : 'policies'});
 	});
 
-	app.get('/ensemble', function(req, res) {
-		res.render('ensemble', { title : 'Dancer\'s Alley Performing Ensemble' ,
-							 page_name : 'ensemble'});
-	});
 
 }

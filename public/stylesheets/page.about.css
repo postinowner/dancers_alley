@@ -40,3 +40,20 @@
 	color: #27344A;
 	margin-top: 15px;
 }
+
+.about-staff--dropdown {
+	font-style: italic;
+	font-size: 16px;
+	color: #3F68AF;
+	margin-top: 10px;
+}
+
+.about-staff--dropdown:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.about-staff--dropdown-content {
+	display: none;
+	margin-top: 10px;
+}
