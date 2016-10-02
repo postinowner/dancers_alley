@@ -6,9 +6,12 @@
   font-weight: bold;
 }
 
+.news-center {
+  text-align: center;
+}
+
 .news-content {
   margin-top: 10px;
-  text-align: center;
 }
 
 .news-content a {
