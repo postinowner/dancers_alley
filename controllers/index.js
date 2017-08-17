@@ -20,9 +20,9 @@ module.exports.set = function(app) {
 							 page_name : 'schedules'});
 	});
 
-	app.get('/extracurricular', function(req, res) {
-		res.render('extracurricular', { title : 'Extra Curricular' ,
-							 page_name : 'extracurricular'});
+	app.get('/pictures', function(req, res) {
+		res.render('pictures', { title : 'Extra Curricular' ,
+							 page_name : 'pictures'});
 	});
 
 	app.get('/recitalinfo', function(req, res) {
